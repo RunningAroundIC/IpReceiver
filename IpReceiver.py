@@ -1,5 +1,6 @@
 import socket
-from colorama import Fore, init
+import sys
+from colorama import Fore, init, deinit
 
 #Colorama on windows
 init()
@@ -22,7 +23,14 @@ while Found == False:
     if data.startswith("Pi Name:"):
         print("*       Found a Raspberry       *")
         print("*********************************")
-        print(Fore.GREEN + data)
+        print(Fore.LIGHTGREEN_EX + data)
+        print("*********************************")
+        print("")
         Found = True
 
+#Stop using Colorama on Windows
+deinit()
+
 serverSocket.close()
+
+sys.exit()
