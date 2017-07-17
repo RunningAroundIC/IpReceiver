@@ -24,7 +24,7 @@ while Found == False:
         print("*       Found a Raspberry       *")
         print("*********************************")
         print(Fore.LIGHTGREEN_EX + data)
-        print("*********************************")
+        print(Fore.RESET + "*********************************")
         print("")
         Found = True
 
