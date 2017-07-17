@@ -1,3 +1,4 @@
 # IpReceiver
  Python script to detect information send out by a Raspberry pi using IpCast.
- - to be used on a desktop og laptop computer.
+ - To be used on a desktop og laptop computer.
+ - Stops looking as soon as a Raspberry Pi is found.
